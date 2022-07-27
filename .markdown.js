@@ -11,9 +11,11 @@ let markdownLibrary = markdownIt({
     linkify: true,
     typographer: true,
 }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: linkIcon
+    permalink: markdownItAnchor.permalink.headerLink({
+        safariReaderFix: true,
+        class: "direct-link",
+        symbol: linkIcon
+    })
 });
 
 module.exports = {
