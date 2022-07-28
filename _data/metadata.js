@@ -16,14 +16,14 @@ module.exports = {
             path: "/feed/en.feed.json",
             url: `${url}/feed/en.feed.json`,
         },
-        source: {
-            label: 'github',
-            link: 'https://github.com/moody-person/11ty-starter'
+        discord: {
+            label: 'discord',
+            link: 'https://discord.gg/2UCkWYan'
         },
         author: {
             url,
-            name: "Your name",
-            email: "example@mail.com",
+            name: "EatItMarilyn",
+            email: "nick@nickthenoob.com",
         },
         posts: {
             title: `Posts | ${title}`,

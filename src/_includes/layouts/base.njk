@@ -38,6 +38,7 @@
         <main class="{% if templateClass %}{{ templateClass }}{% endif %}">
             {{ content | safe }}
         </main>
+        {% include "components/footer.njk" %}
         <script type="module" src="{{ '/assets/js/bundle.js' | url }}"></script>
     </body>
 </html>
