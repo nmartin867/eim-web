@@ -37,13 +37,9 @@
     </head>
     <body class="s-common s-light-theme default-layout">
         {% include "components/header.njk" %}
-
         <main class="{% if templateClass %}{{ templateClass }}{% endif %}">
             {{ content | safe }}
         </main>
-
-        {% include "components/footer.njk" %}
-
         <script type="module" src="{{ '/assets/js/bundle.js' | url }}"></script>
     </body>
 </html>
