@@ -13,10 +13,8 @@
             <meta name="description" content="{{ description or metadata[locale].description }}">
         {% endif %}
 
-        {% set appleTouchIcon = "/static/apple-touch-icon.png" | url %}
         {% set favicon32 = "/static/favicon-32x32.png" | url %}
         {% set favicon16 = "/static/favicon-16x16.png" | url %}
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ appleTouchIcon }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon32 }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ favicon16 }}">
 
